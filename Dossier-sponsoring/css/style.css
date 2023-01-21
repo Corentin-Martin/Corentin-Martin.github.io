@@ -1,3 +1,7 @@
+ul {
+  list-style: none;
+}
+
 .header {
   background-image: url(../Images/background-cover.jpg);
   height: 100vh;
@@ -14,9 +18,10 @@
 .article {
   /* width: 50%; */
   height: 100vh;
-  background-color: rgba(255, 153, 0, 0.5);
-  position: relative;
-  overflow: scroll;
+  background-image: url(../Images/background-article.jpg);
+  background-position: center;
+  background-size: cover;
+  overflow: auto;
   padding: 0.2rem 0.2rem 0rem 0.2rem;
 }
 
@@ -31,6 +36,40 @@
     text-shadow: 3px 3px 3px #000 ;
 }
 
+
+.article__text {
+  margin: 1.4rem 0.5rem;
+}
+
+.article__img {
+  width: 99%;
+}
+
+.article__img--1p3 {
+  width: 75%;
+  margin: 2em auto;
+  display: block;
+}
+
+.article__img--logo-polycar {
+  width: 14%;
+  margin: -0.8rem auto;
+  display: block;
+}
+
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.article__ul--qui {
+  text-align: center;
+  line-height: 2.5rem;
+}
 
 /* .yellowbox {
     background-color: yellow;
