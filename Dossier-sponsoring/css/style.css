@@ -70,6 +70,8 @@ ul {
   display: block;
 }
 
+
+
 .article--left {
   display : none;
 }
@@ -84,6 +86,10 @@ ul {
   width: 55%;
   margin: -0.8rem auto;
   display: block;
+}
+
+.article__img--budget {
+  width: 55%;
 }
 
 .linkreseaux {
@@ -116,6 +122,26 @@ ul {
   color: #000;
 }
 
+.bold--blue {
+  color: #00386D;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.bold--red {
+  color: #F9400E;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.bold--yellow {
+  color: #F9CE1F;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.bold--green {
+  color: #54971B;
+  text-shadow: 1px 1px 1px #000;
+}
+
 .italic {
   font-style: italic;
 }
@@ -125,7 +151,22 @@ ul {
   line-height: 2.5rem;
 }
 
+.a-savoir {
+  background: linear-gradient(orangered, rgb(119, 77, 15));
+  padding: .9em;
+  border-radius: 5rem;
+  color: #fff;
+  text-shadow: .2em .2em .5em #000;
+}
 
+/* .aide {
+  display: flex;
+} */
+
+.article__img--pilote {
+  width: 26%;
+  float: left;
+}
 
 /* .yellowbox {
     background-color: yellow;
