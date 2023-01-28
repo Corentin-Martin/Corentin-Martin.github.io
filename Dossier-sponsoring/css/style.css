@@ -64,13 +64,40 @@ ul {
   display: block;
 }
 
+.article__img--youtube {
+  width: 75%;
+  margin: -0.8rem auto;
+  display: block;
+}
+
 .article--left {
   display : none;
+}
+
+.facebook {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.article__img--facebook {
+  width: 55%;
+  margin: -0.8rem auto;
+  display: block;
+}
+
+.linkreseaux {
+  transition-duration: 1s;
+}
+
+.linkreseaux:hover {
+  transform: scale(1.2);
 }
 
 
 .bold {
   font-weight: bold;
+  color: #000;
 }
 
 .italic {
