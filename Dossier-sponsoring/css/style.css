@@ -1,5 +1,6 @@
 ul {
   list-style: none;
+  padding-left : 0; 
 }
 
 .header {
@@ -16,13 +17,14 @@ ul {
 } */
 
 .article {
-  /* width: 50%; */
+  /* width: 95vh; */
   height: 100vh;
   background-image: url(../Images/background-article.jpg);
   background-position: center;
   background-size: cover;
   overflow: auto;
   padding: 0.2rem 0.2rem 0rem 0.2rem;
+  text-align: center;
 }
 
 .article__title {
@@ -35,7 +37,6 @@ ul {
     color: #fff;
     text-shadow: 3px 3px 3px #000 ;
 }
-
 
 .article__text {
   margin: 1.4rem 0.5rem;
@@ -92,6 +93,24 @@ ul {
   text-shadow: 10px 10px 7px #000;
 }
 
+.lien-after {
+  position: fixed;
+  right: 1rem;
+  bottom: .5rem;
+  background-color: rgb(255, 145, 0);
+  padding: .5rem;
+  border-radius: 20rem;
+}
+
+.lien-before {
+  position: fixed;
+  left: 1rem;
+  bottom: .5rem;
+  background-color: rgb(255, 145, 0);
+  padding: .5rem;
+  border-radius: 20rem;
+}
+
 @media (min-width: 576px) {
     .header__title {
       font-size: 400%;
@@ -123,3 +142,4 @@ ul {
     font-size: 750%;
   }
 }
+
