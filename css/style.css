@@ -45,7 +45,15 @@ ul {
 }
 
 .article__text--contact {
-  margin: 0.2rem 0.5rem;
+  display: block;
+  margin-bottom: 0rem;
+}
+
+.ulcontact {
+  height: 100%;
+  width: 100%;
+  line-height: 3rem;
+  margin-bottom : -16px;
 }
 
 .article__img {
@@ -296,6 +304,7 @@ summary:hover {
   width: 90%;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   background-color: rgba(128, 128, 128, 0.3);
   align-items: center;
   padding: 1em;
@@ -307,7 +316,11 @@ summary:hover {
 
 .textcontact {
   text-align: center;
-  width: 79%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .textcontact--h3 {
@@ -320,9 +333,9 @@ summary:hover {
 }
 
 @media (min-width: 410px) {
-  .article__text--contact {
+  /* .article__text--contact {
     margin: 0.5rem 0.5rem;
-  }
+  } */
 }
 
 
@@ -330,9 +343,9 @@ summary:hover {
 .ulleft {
   float: left;
 }
-.article__text--contact {
+/* .article__text--contact {
   margin: 1rem 0.5rem;
-}
+} */
 }
 
 @media (min-width: 576px) {
@@ -345,9 +358,9 @@ summary:hover {
   .header__title {
     font-size: 530%;
   }
-  .article__text--contact {
+  /* .article__text--contact {
     margin: 1.2rem 0.5rem;
-  }
+  } */
 }
 
 @media (min-width: 992px) {
@@ -371,17 +384,17 @@ summary:hover {
   .article--right {
     width: 60%;
   }
-  .article__text--contact {
+  /* .article__text--contact {
     margin: 1.3rem 0.5rem;
-  }
+  } */
 }
 
 @media (min-width: 1200px) {
   .header__title {
     font-size: 750%;
   }
-  .article__text--contact {
+  /* .article__text--contact {
     margin: 1.5rem 0.5rem;
-  }
+  } */
 }
 
