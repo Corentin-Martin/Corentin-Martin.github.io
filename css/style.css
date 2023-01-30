@@ -1,0 +1,387 @@
+ul {
+  list-style: none;
+  padding-left : 0; 
+}
+
+.header {
+  background-image: url(../Images/background-cover.jpg);
+  height: 96vh;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+}
+
+.accueil {
+  height: 4vh;
+  text-align: center;
+  background-color: #F1CA6F;
+}
+
+.article {
+  /* width: 95vh; */
+  height: 100vh;
+  background-image: url(../Images/background-article.jpg);
+  background-position: center;
+  background-size: cover;
+  overflow: auto;
+  padding: 0.2rem 0.2rem 0rem 0.2rem;
+  text-align: center;
+}
+
+.article__title {
+    background-color: yellow;
+    display: block;
+    text-align: center;
+    padding: 0.2rem 1rem;
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: #fff;
+    text-shadow: 3px 3px 3px #000 ;
+}
+
+.article__text {
+  margin: 1.4rem 0.5rem;
+}
+
+.article__text--contact {
+  margin: 0.2rem 0.5rem;
+}
+
+.article__img {
+  width: 99%;
+}
+
+.article__img--1p3 {
+  width: 65%;
+  margin: 2em auto;
+  display: block;
+}
+
+.article__img--logo-polycar {
+  width: 14%;
+  margin: -0.8rem auto;
+  display: block;
+}
+
+.article__img--youtube {
+  width: 75%;
+  margin: -0.8rem auto;
+  display: block;
+}
+
+.article__img--couv {
+  width : 85%;
+  box-shadow: .5em .5em black;
+  border-radius: 30rem 20rem;
+  margin: 1em 0;
+}
+
+.article__img--video {
+  width : 70%;
+  box-shadow: .5em .5em black;
+  border-radius: 30rem 20rem;
+  margin: 1em 0;
+}
+
+.article__img--aventure {
+  width : 70%;
+  box-shadow: .5em .5em black;
+  border-radius: 5rem;
+  margin: 1em 0;
+}
+
+summary {
+  background-color: #F9400E;
+  color:white;
+  text-shadow: .1em .1em black;
+  border-radius: 10em 10em;
+  display: inline-block;
+  padding: .5em;
+  margin: 1em 0;
+  transition-duration: 1s;
+}
+
+summary:hover {
+  transform: scale(1.2);
+}
+
+.article--left {
+  display : none;
+}
+
+.click {
+  background-color: #F9400E;
+  border-radius: 1em;
+  padding: .2em;
+  box-shadow:.1em .1em black;
+}
+
+
+.facebook {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.article__img--facebook {
+  width: 55%;
+  margin: -0.8rem auto;
+  display: block;
+}
+
+.article__img--budget {
+  width: 55%;
+}
+
+.linkreseaux {
+  transition-duration: 1s;
+}
+
+.linkreseaux:hover {
+  transform: scale(1.2);
+}
+
+.espace {
+  visibility: hidden;
+}
+
+
+.carte__img {
+  width: 50%;
+}
+
+.bold {
+  font-weight: bold;
+  color: #000;
+}
+
+.bold--blue {
+  color: #00386D;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.bold--red {
+  color: #F9400E;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.bold--yellow {
+  color: #F9CE1F;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.bold--green {
+  color: #54971B;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.article__ul--qui {
+  text-align: center;
+  line-height: 2.5rem;
+}
+
+.a-savoir {
+  background: linear-gradient(orangered, rgb(119, 77, 15));
+  padding: .9em;
+  border-radius: 5rem;
+  color: #fff;
+  text-shadow: .2em .2em .5em #000;
+}
+
+
+.article__img--pilote {
+  width: 26%;
+  float: left;
+}
+
+
+.header__title {
+  font-size: 250%;
+  color: #fff;
+  text-shadow: 10px 10px 7px #000;
+}
+
+.header__name {
+  font-size: 3rem;
+  color: #F1CA6F;
+  -webkit-text-stroke: 0.1rem #000;
+  text-shadow: .2rem .2rem 0.2rem #000;
+  transition-duration: 1s;
+}
+
+.header__name:hover {
+  transform: scale(1.2);
+  color: #000;
+ -webkit-text-stroke: 0.1rem #F1CA6F;
+  text-shadow: .2rem .2rem 0.2rem #F1CA6F;
+}
+
+.header__type {
+  font-size: 2rem;
+  color: #7BB1F9;
+  -webkit-text-stroke: 0.1rem #000;
+  text-shadow: .2rem .2rem 0.2rem #000;
+  transition-duration: 1s;
+}
+
+.header__end {
+  font-size: 1.8rem;
+  color: orangered;
+  -webkit-text-stroke: 0.1rem #000;
+  text-shadow: .2rem .2rem 0.2rem rgb(255, 255, 255);
+  transition-duration: 1s;
+}
+
+/* footer {
+  position: relative;
+} */
+
+.lien-central {
+  text-align: center;
+  background-color: rgb(255, 145, 0);
+  padding: .5rem;
+  border-radius: 20rem;
+  color: #fff;
+  text-shadow:.2rem .2rem 0.2rem rgb(0, 0, 0);
+  transition-duration: 1s;
+}
+
+.lien-after {
+  position: fixed;
+  right: 1rem;
+  bottom: .5rem;
+  background-color: rgb(255, 145, 0);
+  padding: .5rem;
+  border-radius: 20rem;
+}
+
+.lien-video {
+  background-color: rgb(255, 145, 0);
+  padding: .5rem;
+  border-radius: 20rem;
+  margin: 1em 0;
+}
+
+.lien-before {
+  position: fixed;
+  left: 1rem;
+  bottom: .5rem;
+  background-color: rgb(255, 145, 0);
+  padding: .5rem;
+  border-radius: 20rem;
+}
+
+.flex-contact {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 90vh;
+}
+
+.flex-contact--items {
+  height: 33%;
+  width: 90%;
+  display: flex;
+  background-color: rgba(128, 128, 128, 0.3);
+}
+
+.flex-contact--items2 {
+  height: 33%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(128, 128, 128, 0.3);
+  align-items: center;
+  padding: 1em;
+}
+
+.img-contact {
+  height: 95%;
+}
+
+.textcontact {
+  text-align: center;
+  width: 79%;
+}
+
+.textcontact--h3 {
+  font-weight: bold;
+  font-size: 200%;
+}
+
+.img--contacts {
+  width: 5%;
+}
+
+@media (min-width: 410px) {
+  .article__text--contact {
+    margin: 0.5rem 0.5rem;
+  }
+}
+
+
+@media (min-width: 556px) {
+.ulleft {
+  float: left;
+}
+.article__text--contact {
+  margin: 1rem 0.5rem;
+}
+}
+
+@media (min-width: 576px) {
+    .header__title {
+      font-size: 400%;
+    }
+  }
+
+@media (min-width: 768px) {
+  .header__title {
+    font-size: 530%;
+  }
+  .article__text--contact {
+    margin: 1.2rem 0.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .header__title {
+    font-size: 680%;
+  }
+
+  .section {
+    display: flex;
+  }
+
+  .article--left {
+    background-image: url(../Images/background-cover.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 40%;
+    height: 100vh;
+    display: block;
+  }
+  
+  .article--right {
+    width: 60%;
+  }
+  .article__text--contact {
+    margin: 1.3rem 0.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header__title {
+    font-size: 750%;
+  }
+  .article__text--contact {
+    margin: 1.5rem 0.5rem;
+  }
+}
+
