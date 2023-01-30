@@ -18,10 +18,6 @@ ul {
   background-color: #F1CA6F;
 }
 
-/* .section {
-  display: flex;
-} */
-
 .article {
   /* width: 95vh; */
   height: 100vh;
@@ -74,11 +70,46 @@ ul {
   display: block;
 }
 
+.article__img--couv {
+  width : 85%;
+  box-shadow: .5em .5em black;
+  border-radius: 30rem 20rem;
+  margin: 1em 0;
+}
 
+.article__img--video {
+  width : 70%;
+  box-shadow: .5em .5em black;
+  border-radius: 30rem 20rem;
+  margin: 1em 0;
+}
+
+summary {
+  background-color: #F9400E;
+  color:white;
+  text-shadow: .1em .1em black;
+  border-radius: 10em 10em;
+  display: inline-block;
+  padding: .5em;
+  margin: 1em 0;
+  transition-duration: 1s;
+}
+
+summary:hover {
+  transform: scale(1.2);
+}
 
 .article--left {
   display : none;
 }
+
+.click {
+  background-color: #F9400E;
+  border-radius: 1em;
+  padding: .2em;
+  box-shadow:.1em .1em black;
+}
+
 
 .facebook {
   display: flex;
@@ -108,14 +139,6 @@ ul {
   visibility: hidden;
 }
 
-/* .carte {
-  display: flex;
-  height: 60vh;
-} */
-
-/* .carte__text {
-  width: 60%;
-} */
 
 .carte__img {
   width: 50%;
@@ -163,29 +186,12 @@ ul {
   text-shadow: .2em .2em .5em #000;
 }
 
-/* .aide {
-  display: flex;
-} */
 
 .article__img--pilote {
   width: 26%;
   float: left;
 }
 
-/* .yellowbox {
-    background-color: yellow;
-    height: 25%;
-    border-radius: 0% 0% 80% 0%;
-}
-
-.orangebox {
-    background-color: rgb(255, 196, 0);
-    height: 25%;
-    border-radius: 80% 0% 0% 0%;
-    position: absolute;
-    bottom: 0;
-    left: 50;
-} */
 
 .header__title {
   font-size: 250%;
@@ -197,7 +203,7 @@ ul {
   font-size: 3rem;
   color: #F1CA6F;
   -webkit-text-stroke: 0.1rem #000;
-  text-shadow: 10px 10px 7px #000;
+  text-shadow: .2rem .2rem 0.2rem #000;
   transition-duration: 1s;
 }
 
@@ -205,14 +211,14 @@ ul {
   transform: scale(1.2);
   color: #000;
  -webkit-text-stroke: 0.1rem #F1CA6F;
-  text-shadow: 10px 10px 7px #F1CA6F;
+  text-shadow: .2rem .2rem 0.2rem #F1CA6F;
 }
 
 .header__type {
   font-size: 2rem;
   color: #7BB1F9;
   -webkit-text-stroke: 0.1rem #000;
-  text-shadow: 10px 10px 7px #000;
+  text-shadow: .2rem .2rem 0.2rem #000;
   transition-duration: 1s;
 }
 
@@ -220,7 +226,7 @@ ul {
   font-size: 1.8rem;
   color: orangered;
   -webkit-text-stroke: 0.1rem #000;
-  text-shadow: .5rem .5rem 0.2rem rgb(255, 255, 255);
+  text-shadow: .2rem .2rem 0.2rem rgb(255, 255, 255);
   transition-duration: 1s;
 }
 
@@ -245,6 +251,13 @@ ul {
   background-color: rgb(255, 145, 0);
   padding: .5rem;
   border-radius: 20rem;
+}
+
+.lien-video {
+  background-color: rgb(255, 145, 0);
+  padding: .5rem;
+  border-radius: 20rem;
+  margin: 1em 0;
 }
 
 .lien-before {
