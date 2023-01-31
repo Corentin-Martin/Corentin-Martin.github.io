@@ -180,7 +180,7 @@ summary:hover {
 }
 
 .a-savoir {
-  background: linear-gradient(orangered, rgb(119, 77, 15));
+  background: linear-gradient(rgb(255, 69, 0), rgb(119, 77, 15));
   padding: .9em;
   border-radius: 5rem;
   color: #fff;
