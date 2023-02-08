@@ -1,0 +1,198 @@
+body {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    font-family: sans-serif;
+}
+
+.header {
+    height: 8vh;
+    /* background-color: brown; */
+    display: flex;
+}
+
+.play {
+    height: 10vh;
+    /* background-color: aqua; */
+    display: flex;
+}
+
+.life-timer {
+    height: 20vh;
+    display: flex;
+    /* background-color: blue; */
+    border: .2rem solid black;
+}
+
+.game {
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    /* background-color: blueviolet; */
+}
+
+.buttons {
+    height: 12vh;
+    display: flex;
+    justify-content: space-around;
+    /* background-color: yellowgreen; */
+}
+
+.results {
+    height: 19vh;
+    /* background-color: orange; */
+    display: flex;
+    justify-content: space-around;
+}
+
+.score {
+    height: 13vh;
+    /* background-color: aqua; */
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.score-title {
+    font-style: italic;
+    font-weight: bold;
+    background-color: brown;
+    padding: .4rem;
+    border-radius: 30rem;
+    margin-top: 0.4rem;
+    margin-bottom: 0;
+    font-size: 1.5rem;
+}
+
+.score-number {
+    font-weight: bold;
+    color: white;
+    font-size: 2.5rem;;
+    text-shadow: .1rem .1rem .1rem brown;
+}
+
+.life {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.timer {
+    width: 50%;
+    margin: auto;
+    color: brown;
+    font-weight: bold;
+    font-size: 6rem;
+}
+
+.button {
+    width: 30%;
+    margin: auto;
+    cursor: pointer;
+    background-color: rgb(165, 42, 42, 0.8);
+    font-size: 2rem;
+    border-radius: 50rem;
+    padding: 1rem;
+    font-weight: bold;
+    box-shadow: .2rem .2rem .2rem black;
+}
+
+h3 {
+    margin: .5rem auto;
+}
+
+.results__class {
+    width: 45%;
+    border: 2px solid black;
+    box-shadow: .2rem .2rem .2rem black;
+    overflow: auto;
+}
+
+/* .button-pass {
+    width: 30%;
+    margin: auto;
+}
+
+.button-next {
+    width: 30%;
+    margin: auto;
+}
+
+.button-ok {
+    width: 30%;
+    margin: auto;
+} */
+
+
+
+.words-ok {
+    height: 80%;
+    margin: auto;
+    display: flex;
+}
+
+.current-word {
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 1rem;
+    font-size: 200%;
+    border-radius: 8rem 18rem;
+    border: .2em solid brown;
+    text-shadow: .1rem .1rem .1rem white;
+    font-weight: bold;
+}
+
+.current-word--over {
+    background-color: red;
+    color: white;
+    border: .2em solid black;
+}
+
+.play-button {
+    margin: auto;
+    font-size: 2rem;
+    border-radius: 10rem 5rem;
+    background-color: white;
+    box-shadow: .5rem .5rem .2rem brown;
+    cursor: pointer;
+    padding: .5rem;
+}
+
+.header__h1 {
+    margin: auto;
+    background-color: brown;
+    box-shadow: .5rem .5rem .5rem black;
+    padding: 0.5rem 3rem;
+    border-radius: 10rem;
+    color: white;
+    text-shadow: .2rem .2rem .2rem black;
+}
+
+.heart {
+    font-size: 5rem;
+    color: brown;
+    text-shadow: .2rem .2rem .2rem black;
+}
+
+.words__ul {
+    margin: auto;
+    list-style: none;
+    padding-left: 0;
+
+}
+
+.words__ul--pass {
+    text-decoration: line-through;
+    color: orangered;
+    font-style: italic;
+}
+
+
+.words__ul--ok {
+    text-decoration: underline;
+    color: green;
+    font-weight: bold;
+}
