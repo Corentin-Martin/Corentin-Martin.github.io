@@ -9,7 +9,7 @@
     <title>MDP GAME</title>
     <link rel="stylesheet" href="./css/reboot.css">
     <link rel="stylesheet" href="./css/style.css">
-    
+
 </head>
 
 <body>
@@ -21,20 +21,47 @@
     </header>
 
     <div class="play">
-        <button class="play-button">PLAY</button>
+        <button class="play-button play-button--beforeLevelChoice">PLAY</button>
+
+        <div class="wordsToRest wordsToRest--beforeLevelChoice">
+            <p class="wordsToRest__title">Mots restants</p>
+            <!-- <p class="wordsToRest__number">2</p> -->
+        </div>
     </div>
 
-    <div class="life-timer">
+    <div class="life-timer life-timer--beforeLevelChoice">
 
-        <ul class="life"></ul>
+        <div class="welcome-text">
 
-        <div class="timer"></div>
+            <p>Bienvenue sur ce mini jeu inspiré de <span class="bold">"Mot de passe"</span> !</p>
+
+            <p>Le but ?</p>
+            
+            <p>Faire découvrir à votre partenaire <span class="bold">5 mots</span> en moins d'1'30 et en donnant seulement <span class="underline">3 indices maximum</span> !</p>
+
+            <ul>
+                <li>Niveau 1 : <span class="bold">9 mots</span> à disposition</li>
+                <li>Niveau 2 : <span class="bold">8 mots</span> à disposition</li>
+                <li>Niveau 3 : <span class="bold">7 mots</span> à disposition</li>
+                <li>Niveau 4 : <span class="bold">6 mots</span> à disposition</li>
+                <li>Niveau 5 : <span class="bold">5 mots</span> à disposition</li>
+            </ul>
+
+            <p><span class="bold">Attention</span>, un mot passé ne reviendra plus en jeu !</p>
+
+            <p><span class="italic">Bonne chance !</span></p>
+        
+        </div>
+
+        <ul class="life life--beforeLevelChoice"></ul>
+
+        <div class="timer timer--beforeLevelChoice"></div>
 
     </div>
 
     <div class="score">
 
-        <p class="score-title">Score</p>
+        <p class="score-title"></p>
 
         <div class="score-number"></div>
 
@@ -44,13 +71,13 @@
 
     <div class="buttons">
 
-        <button class="button button-pass">Passe</button>
-        <button class="button button-next">Next</button>
-        <button class="button button-ok">OK</button>
+        <button class="button button--beforeLevelChoice button-pass">Passe</button>
+        <button class="button button--beforeLevelChoice button-next">Next</button>
+        <button class="button button--beforeLevelChoice button-ok">OK</button>
 
     </div>
 
-    <div class="results">
+    <div class="results results--beforeLevelChoice">
 
             <div class="results__class">
 
@@ -71,9 +98,11 @@
 </body>
 
 <script src="./js/game.js"></script>
+<script src="./js/level.js"></script>
 <script src="./js/timer.js"></script>
 <script src="./js/lifes.js"></script>
 <script src="./js/words.js"></script>
+<script src="./js/dico.js"></script>
 <script src="./js/next.js"></script>
 <script src="./js/score.js"></script>
 <script src="./js/ok.js"></script>

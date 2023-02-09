@@ -6,7 +6,15 @@ const game = {
 
     onGame: null,
 
+    welcomeText: document.querySelector(".welcome-text"),
+
+    resultBox: document.querySelector(".results"),
+
+    lifeTimerBox: document.querySelector(".life-timer"),
+
     init: function() {
+
+        level.init();
 
         game.playButton.addEventListener("click", game.handleApp)
 
@@ -22,6 +30,8 @@ const game = {
 
             game.overStatus = false;
             game.onGame = true;
+
+            game.removePreGameLayout();
 
             words.init();
             lifes.init();
@@ -76,6 +86,20 @@ const game = {
         words.currentWord.textContent = "GAME OVER";
         words.divGame.append(words.currentWord);
 
+    },
+
+    removePreGameLayout: function() {
+
+        game.welcomeText.remove();
+        game.resultBox.classList.remove("results--beforeLevelChoice");
+        game.lifeTimerBox.classList.remove("life-timer--beforeLevelChoice");
+        words.divWordsToRest.classList.remove("wordsToRest--beforeLevelChoice");
+
+        next.nextButton.classList.remove("button--beforeLevelChoice");
+
+        ok.okButton.classList.remove("button--beforeLevelChoice");
+
+        level.killButtons();
     }
 }
 

@@ -8,6 +8,18 @@ button {
     color: black;
 }
 
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
 /* HEADER */
 
 .header {
@@ -30,6 +42,7 @@ button {
 .play {
     height: 10vh;
     display: flex;
+    position: relative;
 }
 
 .play-button {
@@ -54,12 +67,63 @@ button {
     text-shadow: .2rem .2rem .2rem black;
 }
 
+.play-button--beforeLevelChoice {
+    display: none;
+}
+
+.wordsToRest {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    padding: .2rem;
+    border-radius: .5rem;
+    background-color: brown;
+    height: 70%;
+    line-height: 1rem;
+}
+
+.wordsToRest--beforeLevelChoice {
+    display : none;
+}
+
+.wordsToRest__title {
+    color: white;
+    font-style: italic;
+}
+
+.wordsToRest__number {
+    color: white;
+    text-shadow: .2rem .2rem .2rem black;
+}
+
 /* DIV LIFE-TIMER */
 
 .life-timer {
     height: 20vh;
     display: flex;
     border: .2rem solid black;
+}
+
+.life-timer--10seconds {
+    background-color: red;
+}
+
+.life-timer--beforeLevelChoice {
+    height: 50vh;
+}
+
+.lvl {
+    width: 20%;
+    border-radius: 10rem;
+    background-color: gray;
+    color: brown;
+    font-weight: bold;
+    font-size: 220%;
+}
+
+.lvl:focus {
+    background-color: green;
+    color: brown;
 }
 
 .life {
@@ -69,17 +133,26 @@ button {
     justify-content: space-around;
     padding: 0 2rem;
     list-style: none;
+    color: brown;
+}
+
+.life--10seconds {
+    color: white;
+    text-shadow: .2rem .2rem .2rem black;
+}
+
+.life--beforeLevelChoice {
+    display: none;
 }
 
 .heart {
     font-size: 3.5rem;
-    color: brown;
     text-shadow: .2rem .2rem .2rem black;
 }
 
 .heart--over {
     font-size: 3rem;
-    color: red;
+    color: white;
 }
 
 .timer {
@@ -88,6 +161,31 @@ button {
     color: brown;
     font-weight: bold;
     font-size: 6rem;
+}
+
+.timer--10seconds {
+    color: white;
+    text-shadow: .2rem .2rem .2rem black;
+}
+
+.timer--beforeLevelChoice {
+    display: none;
+}
+
+.welcome-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+.welcome-text li {
+    list-style: none;
+}
+
+.welcome-text--onGame {
+    display: none;
 }
 
 /* DIV SCORE */
@@ -112,6 +210,13 @@ button {
     font-size: 1.5rem;
 }
 
+.level_select {
+    background-color: rgb(255, 217, 0);
+    color: white;
+    text-shadow: .2rem .2rem .2rem black;
+    box-shadow: .5rem .5rem .2rem black;
+}
+
 .score-number {
     font-weight: bold;
     color: white;
@@ -129,7 +234,7 @@ button {
 
 .current-word {
     margin: auto;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: white;
     padding: 1rem;
     font-size: 200%;
     border-radius: 8rem 18rem;
@@ -164,6 +269,10 @@ button {
     box-shadow: .2rem .2rem .2rem black;
 }
 
+.button--beforeLevelChoice {
+    display: none;
+}
+
 /* DIV RESULTS */
 
 .results {
@@ -172,12 +281,18 @@ button {
     justify-content: space-around;
 }
 
+.results--beforeLevelChoice {
+    display: none;
+}
+
 .results__class {
     width: 45%;
     border: 2px solid black;
     box-shadow: .2rem .2rem .2rem black;
     overflow: auto;
 }
+
+
 
 .results__title {
     margin: .5rem auto;

@@ -6,6 +6,7 @@ const ok = {
 
     init: function() {
 
+        
         ok.okButton.addEventListener("click", ok.handleOk);
 
     },
@@ -15,7 +16,7 @@ const ok = {
         if (!game.overStatus) {
 
             let liOk = document.createElement("li");
-            liOk.textContent = words.dico[words.randomIndex];
+            liOk.textContent = words.playingList[words.playingIndex-1];
             ok.okBox.append(liOk);
 
             score.increment();

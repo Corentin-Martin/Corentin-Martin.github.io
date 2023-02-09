@@ -6,6 +6,7 @@ const passe = {
 
     init: function() {
 
+        passe.passeButton.classList.remove("button--beforeLevelChoice");
         passe.passeButton.addEventListener("click", passe.handlePasse);
 
     },
@@ -15,7 +16,7 @@ const passe = {
         if (!game.overStatus) {
 
             let liPasse = document.createElement("li");
-            liPasse.textContent = words.dico[words.randomIndex];
+            liPasse.textContent = words.playingList[words.playingIndex-1];
             passe.passeBox.append(liPasse);
 
             next.nextWord();

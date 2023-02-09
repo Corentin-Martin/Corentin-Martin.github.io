@@ -1,43 +1,48 @@
 
 const timer = {
-    temps: 30,
+
+    temps: 90,
 
     timerElement: document.querySelector(".timer"),
 
     init: function() {
 
-        timer.temps = 30,
-
         setInterval(timer.compteArebours, 1000);
+
+        timer.timerElement.classList.remove("timer--beforeLevelChoice");
 
     },
 
     compteArebours: function() {
-        let secondes = parseInt(timer.temps % 60, 10);
 
-        secondes = secondes < 10 ? "0" + secondes : secondes;
-      
-        timer.timerElement.innerText = `:${secondes}`;
-        timer.temps = timer.temps <= 0 ? 0 : timer.temps - 1;
+        timer.timerElement.textContent = timer.temps;
 
-        timer.timerToZero();
+        if (timer.temps <= 0) {
+
+            timer.temps = 0;
+            game.over();
+
+        } else {
+            timer.temps = timer.temps -1;
+        }
+
+        timer.lastSeconds();
+
     },
 
     overTimer: function() {
         timer.temps = 0;
     },
 
-    timerToZero: function() {
+    lastSeconds: function() {
 
-        if (timer.temps === 0) {
-
-            timer.temps = 0;
-            game.over();
-
+        if (timer.temps < 10) {
+            game.lifeTimerBox.classList.add("life-timer--10seconds");
+            lifes.lifeBox.classList.add("life--10seconds");
+            timer.timerElement.classList.add("timer--10seconds");
+            
         }
-
-    },
-
+    }
     
 }
 

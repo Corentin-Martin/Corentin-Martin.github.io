@@ -4,6 +4,7 @@ const next = {
 
     init: function() {
 
+        
         next.nextButton.addEventListener("click", next.handleNext);
 
     },
@@ -25,7 +26,7 @@ const next = {
 
     nextWord: function() {
 
-            words.init();
+            words.wordAffichage();
             lifes.init();
 
     },

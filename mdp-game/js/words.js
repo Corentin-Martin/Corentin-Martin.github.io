@@ -1,146 +1,65 @@
 const words = {
-    dico: [
-            "Canada",
-            "Boutique",
-            "Friandise",
-            "Shopping",
-            "Deuxième",
-            "Pyrénées",
-            "Disneyland",
-            "Orange",
-            "Symphonie",
-            "Couple",
-            "Koala",
-            "Circuit",
-            "Cramoisi",
-            "Water-polo",
-            "Bourdonnement",
-            "Recette",
-            "Offre",
-            "Sentir",
-            "Souple",
-            "Limace",
-            "Sardine",
-            "Joint",
-            "Moineau",
-            "Souris",
-            "Tatou",
-            "Cygne",
-            "Dauphin",
-            "Lémurien",
-            "Bœuf",
-            "Marron",
-            "Rouge",
-            "Orange",
-            "Blanc",
-            "Noir",
-            "Marron",
-            "Blanc",
-            "Rose",
-            "Bleu",
-            "Jaune",
-            "Père",
-            "Cousine",
-            "Gendre",
-            "Nièce",
-            "Nièce",
-            "Cousin",
-            "Oncle",
-            "Poire",
-            "Citron",
-            "Haricots",
-            "Lait",
-            "Poisson",
-            "Banane",
-            "Orge",
-            "Noisette",
-            "Palourdes",
-            "Carotte",
-            "Sport",
-            "Philologie",
-            "Réalisateur",
-            "Plume",
-            "Journalisme",
-            "Cartable",
-            "Classe",
-            "Lire",
-            "Entreprise",
-            "Motivation",
-            "Industrie",
-            "Captif",
-            "Affiler",
-            "Chant",
-            "Lesbienne",
-            "Militaires",
-            "Irritation",
-            "Premier",
-            "Secondes",
-            "De",
-            "Crédit",
-            "Narration",
-            "Colère",
-            "Caravelles",
-            "Agiter",
-            "Baleine",
-            "Lutte",
-            "Hallucination",
-            "Antigel",
-            "Arbitre",
-            "Poule",
-            "Bon",
-            "Parapluie",
-            "Neige",
-            "Fourchette",
-            "Route",
-            "Poulet",
-            "Toilettes",
-            "Soldat",
-            "Cinq",
-            "Cloche",
-            "Soldat",
-            "Animal",
-            "Pierre",
-            "Chaussure",
-            "Magasin",
-            "Hiver",
-            "Soldat",
-            "Trois",
-            "Parler",
-            "Couettes",
-            "Carte",
-            "Guitare",
-            "Magasin",
-            "Valise",
-            "Fille",
-            "Sucette",
-            "Avion",
-            "Carotte",
-            "Feuille",],
 
     randomIndex: 0,
 
     divGame: document.querySelector(".game"),
     currentWord: document.createElement("p"),
 
+    divWordsToRest: document.querySelector(".wordsToRest"),
+    numberOnRest: document.createElement("p"),
+
+    onPlayingList: [9, 8, 7, 6, 5],
+
+    available: 0,
+
+    playingList: [],
+
+    playingIndex : 0,
+
     init: function() {
 
-        words.randomGeneration();
+        words.generateList();
 
         words.wordAffichage();
 
     },
 
     randomGeneration: function() {
-        words.randomIndex = Math.floor((Math.random() * words.dico.length-1) +1);
+        words.randomIndex = Math.floor((Math.random() * dico.list.length-1) +1);
     },
 
     wordAffichage: function() {
 
         words.currentWord.remove();
         words.currentWord.classList.add("current-word");
-        words.currentWord.textContent = words.dico[words.randomIndex];
+        words.currentWord.textContent = words.playingList[words.playingIndex];
         words.divGame.append(words.currentWord);
 
+        words.playingIndex++;
+
+        console.log(words.available);
+
+    },
+
+    generateList: function() {
+
+        for (let index = 0; index < words.available; index++) {
+            words.randomGeneration();
+            words.playingList.push(dico.list[words.randomIndex]);
+            dico.list.pop(dico.list[words.randomIndex]);
+            
+        }
+
+    },
+
+    countWordsToPlay: function() {
+
+        words.numberOnRest.remove();
+        numberOnRest.classList.add("wordsToRest__number");
+        numberOnRest.textContent = words.encore;
+        divWordsToRest.append(numberOnRest);
+
+        // words.available -= 1;
     }
 
 }

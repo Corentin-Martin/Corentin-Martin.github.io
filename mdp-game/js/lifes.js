@@ -8,6 +8,8 @@ const lifes = {
 
         lifes.makeLifes();
 
+        lifes.lifeBox.classList.remove("life--beforeLevelChoice");
+
     },
 
     makeLifes: function() {
@@ -28,7 +30,7 @@ const lifes = {
         while (lifes.lifeBox.firstChild) {
 
             lifes.lifeBox.removeChild(lifes.lifeBox.firstChild);
-            
+
           }
 
     },
