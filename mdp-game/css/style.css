@@ -4,7 +4,12 @@ body {
     font-family: sans-serif;
 }
 
+button {
+    color: black;
+}
+
 /* HEADER */
+
 .header {
     height: 8vh;
     display: flex;
@@ -62,11 +67,12 @@ body {
     margin: auto;
     display: flex;
     justify-content: space-around;
+    padding: 0 2rem;
     list-style: none;
 }
 
 .heart {
-    font-size: 5rem;
+    font-size: 3.5rem;
     color: brown;
     text-shadow: .2rem .2rem .2rem black;
 }
@@ -115,9 +121,8 @@ body {
 
 /* DIV GAME */
 
-
 .game {
-    height: 15vh;
+    height: 12vh;
     display: flex;
     justify-content: center;
 }
