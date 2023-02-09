@@ -4,6 +4,8 @@ const game = {
 
     overStatus: null,
 
+    onGame: null,
+
     init: function() {
 
         game.playButton.addEventListener("click", game.handleApp)
@@ -12,15 +14,30 @@ const game = {
 
     handleApp: function() {
 
-        game.overStatus = false;
+        if (game.onGame) {
+            location.reload();
+        }
 
-        words.init();
-        lifes.init();
-        timer.init();
-        next.init();
-        score.init();
-        ok.init();
-        passe.init();
+        if (!game.overStatus) {
+
+            game.overStatus = false;
+            game.onGame = true;
+
+            words.init();
+            lifes.init();
+            timer.init();
+            next.init();
+            score.init();
+            ok.init();
+            passe.init();
+            game.buttonWhenOn();
+
+        } 
+        else {
+
+            location.reload();
+
+        }
 
     },
 
@@ -31,6 +48,23 @@ const game = {
         lifes.killLifes();
         lifes.zeroLifes();
         timer.overTimer();
+        game.buttonWhenOver();
+
+    },
+
+    buttonWhenOver: function() {
+        
+        game.playButton.classList.remove("play-button--whenOn");
+        game.playButton.classList.add("play-button--whenOver");
+        game.playButton.textContent = "Rechargez la page";
+
+    },
+
+    buttonWhenOn: function() {
+
+        game.playButton.classList.add("play-button--whenOn");
+
+        game.playButton.textContent = "Recommencer ?";
 
     },
 

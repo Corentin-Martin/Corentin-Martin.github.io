@@ -26,7 +26,9 @@ const lifes = {
     killLifes: function() {
 
         while (lifes.lifeBox.firstChild) {
+
             lifes.lifeBox.removeChild(lifes.lifeBox.firstChild);
+            
           }
 
     },
@@ -41,6 +43,7 @@ const lifes = {
 
         const life = document.createElement("li");
         life.classList.add("heart");
+        life.classList.add("heart--over");
         life.textContent = "GAME OVER";
         lifes.lifeBox.prepend(life);
 

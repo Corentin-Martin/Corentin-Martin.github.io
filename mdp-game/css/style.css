@@ -4,49 +4,90 @@ body {
     font-family: sans-serif;
 }
 
+/* HEADER */
 .header {
     height: 8vh;
-    /* background-color: brown; */
     display: flex;
 }
 
+.header__h1 {
+    margin: auto;
+    background-color: brown;
+    box-shadow: .5rem .5rem .5rem black;
+    padding: 0.5rem 3rem;
+    border-radius: 10rem;
+    color: white;
+    text-shadow: .2rem .2rem .2rem black;
+}
+
+/* DIV PLAY */
+
 .play {
     height: 10vh;
-    /* background-color: aqua; */
     display: flex;
 }
+
+.play-button {
+    margin: auto;
+    font-size: 2rem;
+    border-radius: 10rem 5rem;
+    background-color: white;
+    box-shadow: .5rem .5rem .2rem brown;
+    cursor: pointer;
+    padding: .5rem;
+}
+
+.play-button--whenOn {
+    font-size: 1rem;
+    background-color: gray;
+}
+
+.play-button--whenOver {
+    font-size: 1.5rem;
+    background-color: orangered;
+    color: white;
+    text-shadow: .2rem .2rem .2rem black;
+}
+
+/* DIV LIFE-TIMER */
 
 .life-timer {
     height: 20vh;
     display: flex;
-    /* background-color: blue; */
     border: .2rem solid black;
 }
 
-.game {
-    height: 15vh;
-    display: flex;
-    justify-content: center;
-    /* background-color: blueviolet; */
-}
-
-.buttons {
-    height: 12vh;
+.life {
+    width: 50%;
+    margin: auto;
     display: flex;
     justify-content: space-around;
-    /* background-color: yellowgreen; */
+    list-style: none;
 }
 
-.results {
-    height: 19vh;
-    /* background-color: orange; */
-    display: flex;
-    justify-content: space-around;
+.heart {
+    font-size: 5rem;
+    color: brown;
+    text-shadow: .2rem .2rem .2rem black;
 }
+
+.heart--over {
+    font-size: 3rem;
+    color: red;
+}
+
+.timer {
+    width: 50%;
+    margin: auto;
+    color: brown;
+    font-weight: bold;
+    font-size: 6rem;
+}
+
+/* DIV SCORE */
 
 .score {
     height: 13vh;
-    /* background-color: aqua; */
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -72,66 +113,13 @@ body {
     text-shadow: .1rem .1rem .1rem brown;
 }
 
-.life {
-    width: 50%;
-    margin: auto;
+/* DIV GAME */
+
+
+.game {
+    height: 15vh;
     display: flex;
-    justify-content: space-around;
-    list-style: none;
-}
-
-.timer {
-    width: 50%;
-    margin: auto;
-    color: brown;
-    font-weight: bold;
-    font-size: 6rem;
-}
-
-.button {
-    width: 30%;
-    margin: auto;
-    cursor: pointer;
-    background-color: rgb(165, 42, 42, 0.8);
-    font-size: 2rem;
-    border-radius: 50rem;
-    padding: 1rem;
-    font-weight: bold;
-    box-shadow: .2rem .2rem .2rem black;
-}
-
-h3 {
-    margin: .5rem auto;
-}
-
-.results__class {
-    width: 45%;
-    border: 2px solid black;
-    box-shadow: .2rem .2rem .2rem black;
-    overflow: auto;
-}
-
-/* .button-pass {
-    width: 30%;
-    margin: auto;
-}
-
-.button-next {
-    width: 30%;
-    margin: auto;
-}
-
-.button-ok {
-    width: 30%;
-    margin: auto;
-} */
-
-
-
-.words-ok {
-    height: 80%;
-    margin: auto;
-    display: flex;
+    justify-content: center;
 }
 
 .current-word {
@@ -151,30 +139,43 @@ h3 {
     border: .2em solid black;
 }
 
-.play-button {
+/* DIV BUTTONS */
+
+.buttons {
+    height: 12vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.button {
+    width: 30%;
     margin: auto;
-    font-size: 2rem;
-    border-radius: 10rem 5rem;
-    background-color: white;
-    box-shadow: .5rem .5rem .2rem brown;
     cursor: pointer;
-    padding: .5rem;
+    background-color: rgb(165, 42, 42, 0.8);
+    font-size: 2rem;
+    border-radius: 50rem;
+    padding: 1rem;
+    font-weight: bold;
+    box-shadow: .2rem .2rem .2rem black;
 }
 
-.header__h1 {
-    margin: auto;
-    background-color: brown;
-    box-shadow: .5rem .5rem .5rem black;
-    padding: 0.5rem 3rem;
-    border-radius: 10rem;
-    color: white;
-    text-shadow: .2rem .2rem .2rem black;
+/* DIV RESULTS */
+
+.results {
+    height: 19vh;
+    display: flex;
+    justify-content: space-around;
 }
 
-.heart {
-    font-size: 5rem;
-    color: brown;
-    text-shadow: .2rem .2rem .2rem black;
+.results__class {
+    width: 45%;
+    border: 2px solid black;
+    box-shadow: .2rem .2rem .2rem black;
+    overflow: auto;
+}
+
+.results__title {
+    margin: .5rem auto;
 }
 
 .words__ul {
@@ -196,3 +197,15 @@ h3 {
     color: green;
     font-weight: bold;
 }
+
+
+
+
+
+
+
+
+
+
+
+

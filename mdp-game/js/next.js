@@ -16,8 +16,6 @@ const next = {
 
             lifes.checkLife();
 
-            console.log(game.overStatus);
-
         } 
         else {
             game.relaunch();
