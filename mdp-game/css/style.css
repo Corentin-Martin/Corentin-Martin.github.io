@@ -108,8 +108,12 @@ button {
     background-color: red;
 }
 
+.life-timer--win {
+    background-color: green;
+}
+
 .life-timer--beforeLevelChoice {
-    height: 50vh;
+    height: 45vh;
 }
 
 .lvl {
@@ -151,6 +155,11 @@ button {
 }
 
 .heart--over {
+    font-size: 3rem;
+    color: white;
+}
+
+.heart--win {
     font-size: 3rem;
     color: white;
 }
@@ -291,8 +300,6 @@ button {
     box-shadow: .2rem .2rem .2rem black;
     overflow: auto;
 }
-
-
 
 .results__title {
     margin: .5rem auto;

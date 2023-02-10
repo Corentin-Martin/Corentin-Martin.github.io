@@ -6,6 +6,8 @@ const game = {
 
     onGame: null,
 
+    win: null,
+
     welcomeText: document.querySelector(".welcome-text"),
 
     resultBox: document.querySelector(".results"),
@@ -60,6 +62,8 @@ const game = {
         timer.overTimer();
         game.buttonWhenOver();
 
+        words.divWordsToRest.remove();
+
     },
 
     buttonWhenOver: function() {
@@ -100,7 +104,26 @@ const game = {
         ok.okButton.classList.remove("button--beforeLevelChoice");
 
         level.killButtons();
-    }
+
+    },
+
+    youWin: function() {
+
+        lifes.killLifes();
+        game.buttonWhenOver();
+        words.divWordsToRest.remove();
+
+        const life = document.createElement("li");
+        life.classList.add("heart");
+        life.classList.add("heart--win");
+        game.lifeTimerBox.classList.add("life-timer--win");
+        life.textContent = "YOU WIN";
+        lifes.lifeBox.prepend(life);
+
+        game.win = true;
+
+    },
+
 }
 
 

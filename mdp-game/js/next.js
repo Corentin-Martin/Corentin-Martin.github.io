@@ -4,7 +4,6 @@ const next = {
 
     init: function() {
 
-        
         next.nextButton.addEventListener("click", next.handleNext);
 
     },
@@ -17,9 +16,10 @@ const next = {
 
             lifes.checkLife();
 
-        } 
-        else {
+        } else {
+
             game.relaunch();
+
         }
 
     },
@@ -30,7 +30,6 @@ const next = {
             lifes.init();
 
     },
-
     
 }
 

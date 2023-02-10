@@ -6,7 +6,6 @@ const ok = {
 
     init: function() {
 
-        
         ok.okButton.addEventListener("click", ok.handleOk);
 
     },
@@ -21,14 +20,24 @@ const ok = {
 
             score.increment();
 
-            next.nextWord();
+            if (score.index === 5) {
 
-        } 
-        else {
+                game.win = true;
+                timer.overTimer();
+
+            } else {
+
+                next.nextWord();
+
+            }
+
+        } else {
+
             game.relaunch();
+            
         }
 
-        },
+    },
 
 }
 

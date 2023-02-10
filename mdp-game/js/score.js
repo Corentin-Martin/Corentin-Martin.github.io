@@ -17,10 +17,11 @@ const score = {
     },
 
     increment: function() {
+
         score.index++;
         score.scoreNumber.textContent = score.index;
 
-    }
+    },
 
 }
 

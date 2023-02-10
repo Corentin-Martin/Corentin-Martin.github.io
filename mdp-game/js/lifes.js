@@ -2,6 +2,8 @@ const lifes = {
 
     lifeBox: document.querySelector(".life"),
 
+    targetScore: 0,
+
     init: function() {
 
         lifes.killLifes();
@@ -9,6 +11,8 @@ const lifes = {
         lifes.makeLifes();
 
         lifes.lifeBox.classList.remove("life--beforeLevelChoice");
+
+        lifes.targetScore = score.index + words.beforeEndList;
 
     },
 
@@ -31,7 +35,7 @@ const lifes = {
 
             lifes.lifeBox.removeChild(lifes.lifeBox.firstChild);
 
-          }
+        }
 
     },
 
@@ -53,10 +57,16 @@ const lifes = {
 
     checkLife: function() {
 
-        if (lifes.lifeBox.lastChild === null) {
-            
+        if ((lifes.lifeBox.lastChild === null) && lifes.targetScore >= 5) {
+
+            next.nextWord();
+
+        } else if (lifes.lifeBox.lastChild === null) {
+
             game.over();
+
         }
 
-    }
+    },
+    
 }

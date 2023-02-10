@@ -28,19 +28,23 @@ const level = {
     },
 
     killButtons: function() {
+
         while (level.box.firstChild) {
 
             level.box.removeChild(level.box.firstChild);
             
           }
+
     },
 
     putListeners: function() {
+
         const levels = document.querySelectorAll(".lvl");
 
         for (const lvl of levels) {
             lvl.addEventListener("click", level.handleLevelClick);
         }
+
     },
 
     handleLevelClick: function(event) {
@@ -52,7 +56,6 @@ const level = {
 
         game.playButton.classList.remove("play-button--beforeLevelChoice");
         
-
     },
 
 }

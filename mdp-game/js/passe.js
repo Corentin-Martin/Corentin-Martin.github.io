@@ -19,11 +19,20 @@ const passe = {
             liPasse.textContent = words.playingList[words.playingIndex-1];
             passe.passeBox.append(liPasse);
 
-            next.nextWord();
+            if (lifes.targetScore >= 5) {
 
-        } 
-        else {
+                next.nextWord();
+
+            } else {
+
+                game.over();
+
+            }
+
+        } else {
+
             game.relaunch();
+            
         }
 
     },
