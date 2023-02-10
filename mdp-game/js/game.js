@@ -16,6 +16,8 @@ const game = {
 
     init: function() {
 
+        music.preGame.play();
+
         level.init();
 
         game.playButton.addEventListener("click", game.handleApp)
@@ -44,6 +46,9 @@ const game = {
             passe.init();
             game.buttonWhenOn();
 
+            music.preGame.pause();
+            music.onGame.play();
+
         } else {
 
             location.reload();
@@ -60,6 +65,9 @@ const game = {
         lifes.zeroLifes();
         timer.overTimer();
         game.buttonWhenOver();
+
+        music.onGame.pause();
+        music.over.play();
 
         words.divWordsToRest.remove();
 
@@ -120,6 +128,9 @@ const game = {
         lifes.lifeBox.prepend(life);
 
         game.win = true;
+
+        music.onGame.pause();
+        music.win.play();
 
     },
 
