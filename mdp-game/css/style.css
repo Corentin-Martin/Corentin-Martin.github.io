@@ -20,6 +20,11 @@ button {
     text-decoration: underline;
 }
 
+.small {
+    font-size: .6rem;
+    font-style: italic;
+}
+
 /* HEADER */
 
 .header {
@@ -276,6 +281,7 @@ button {
     padding: 1rem;
     font-weight: bold;
     box-shadow: .2rem .2rem .2rem black;
+    line-height: 0.8rem;
 }
 
 .button--beforeLevelChoice {

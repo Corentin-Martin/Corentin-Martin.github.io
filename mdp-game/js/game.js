@@ -44,8 +44,7 @@ const game = {
             passe.init();
             game.buttonWhenOn();
 
-        } 
-        else {
+        } else {
 
             location.reload();
 
